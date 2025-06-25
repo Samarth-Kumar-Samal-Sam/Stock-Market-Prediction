@@ -6,7 +6,7 @@ Empower your investment decisions with **Stock Prediction**, a cutting-edge web 
 
 ## Live Application
 
-Try the app now: [Stock Prediction App](https://sam-stock-prediction-app.streamlit.app/)
+Try the app now: [Stock Prediction App](https://sam-stock-market-prediction.streamlit.app/)
 
 ---
 
