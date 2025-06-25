@@ -4,13 +4,15 @@ import yfinance as yf
 from prophet import Prophet
 import plotly.graph_objects as go
 from datetime import date
-import matplotlib.pyplot as plt
-import seaborn as sns
+from plotly.subplots import make_subplots
 
 st.set_page_config(page_title="📈 Stock Forecast Application", layout="wide")
 st.title("📈 Stock Price Forecasting")
 
-st.sidebar.header("User Input Parameters")
+# ---------------------------------------------
+# 📋 USER INPUTS (Main Screen)
+# ---------------------------------------------
+st.header("📋 User Input Parameters")
 
 companies = {
     "Apple": "AAPL",
@@ -40,29 +42,31 @@ companies = {
     "Intel": "INTC"
 }
 
-# Create dropdown options with full name and ticker
 options = [f"{name} ({ticker})" for name, ticker in companies.items()]
-
-selected = st.sidebar.selectbox("Select Stock Company", options)
-
-# Extract ticker and company name separately
+selected = st.selectbox("Select Stock Company", options)
 selected_name = selected.split(" (")[0]
 selected_ticker = companies[selected_name]
 
-start_date = st.sidebar.date_input("Start Date", date(2015, 1, 1), min_value=date(2000, 1, 1))
-end_date = st.sidebar.date_input("End Date", date(2025, 1, 1), min_value=start_date)
+start_date = st.date_input("Start Date", date(2015, 1, 1), min_value=date(2000, 1, 1))
+end_date = st.date_input("End Date", date(2025, 1, 1), min_value=start_date)
 
-n_years = st.sidebar.slider("Forecast Period (Years)", 1, 10)
+n_years = st.slider("Forecast Period (Years)", 1, 10)
 n_days = n_years * 365
 
-predict_button = st.sidebar.button("🔮 Predict")
+predict_button = st.button("🔮 Predict")
 
+# ---------------------------------------------
+# 📦 Load Data
+# ---------------------------------------------
 @st.cache_data
 def load_data(ticker, start, end):
     df = yf.download(ticker, start=start, end=end, auto_adjust=True)
     df.reset_index(inplace=True)
     return df
 
+# ---------------------------------------------
+# 🔮 Forecast Logic (Executed only on button click)
+# ---------------------------------------------
 if predict_button:
     st.subheader(f"📥 Loading data for {selected_name}")
     data = load_data(selected_ticker, start_date, end_date)
@@ -70,7 +74,6 @@ if predict_button:
     st.write(f"### Raw Data from {start_date} to {end_date}")
     st.dataframe(data)
 
-    # Download button for raw data
     csv_raw = data.to_csv(index=False).encode('utf-8')
     st.download_button(
         label="⬇️ Download Raw Data as CSV",
@@ -95,7 +98,6 @@ if predict_button:
     forecast_future = forecast[forecast['ds'] > df['ds'].max()]
     st.dataframe(forecast_future[['ds', 'yhat', 'yhat_lower', 'yhat_upper']])
 
-    # Download button for forecast data
     csv_forecast = forecast_future[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].to_csv(index=False).encode('utf-8')
     st.download_button(
         label="⬇️ Download Forecast Data as CSV",
@@ -104,75 +106,72 @@ if predict_button:
         mime='text/csv'
     )
 
-    st.subheader("📈 Forecast Plot (Interactive)")
+    # ---------------------------------------------
+    # 📈 Forecast Plot (with Gridlines)
+    # ---------------------------------------------
+    st.subheader("📈 Forecast Plot")
 
     fig = go.Figure()
 
+    fig.add_trace(go.Scatter(x=df['ds'], y=df['y'], mode='lines', name='Actual', line=dict(color='red')))
+    fig.add_trace(go.Scatter(x=forecast['ds'], y=forecast['yhat'], mode='lines', name='Forecast', line=dict(color='blue')))
+    fig.add_trace(go.Scatter(x=forecast['ds'], y=forecast['yhat_upper'], line=dict(width=0), showlegend=False))
     fig.add_trace(go.Scatter(
-        x=df['ds'], y=df['y'], mode='lines', name='Actual',
-        line=dict(color='red', width=1)
-    ))
-
-    fig.add_trace(go.Scatter(
-        x=forecast['ds'], y=forecast['yhat'], mode='lines', name='Forecast',
-        line=dict(color='blue')
-    ))
-
-    fig.add_trace(go.Scatter(
-        x=forecast['ds'], y=forecast['yhat_upper'], mode='lines',
-        line=dict(width=0), showlegend=False
-    ))
-    fig.add_trace(go.Scatter(
-        x=forecast['ds'], y=forecast['yhat_lower'], mode='lines',
-        fill='tonexty', fillcolor='rgba(173,216,230,0.2)',
+        x=forecast['ds'], y=forecast['yhat_lower'],
+        fill='tonexty', fillcolor='rgba(0, 123, 255, 0.2)',
         line=dict(width=0), name='Confidence Interval'
     ))
 
     fig.update_layout(
-        title=dict(text=f"{selected_name} Stock Price Forecast", font=dict(color='black')),
-        xaxis=dict(
-            title=dict(text="Date", font=dict(color='black')),
-            tickfont=dict(color='black'),
-            showgrid=True,
-            gridcolor='lightgray',
-            color='black'
-        ),
-        yaxis=dict(
-            title=dict(text="Price (USD)", font=dict(color='black')),
-            tickfont=dict(color='black'),
-            showgrid=True,
-            gridcolor='lightgray',
-            color='black'
-        ),
-        template="plotly_white",
+        title=f"{selected_name} Stock Price Forecast",
+        xaxis=dict(title="Date", showgrid=True, gridcolor='lightgray'),
+        yaxis=dict(title="Price (USD)", showgrid=True, gridcolor='lightgray'),
+        template="simple_white",
         hovermode="x unified",
-        paper_bgcolor='white',
-        plot_bgcolor='white',
-        font=dict(color='black'),
-        legend=dict(
-            font=dict(color='black'),
-            bgcolor='white'
-        )
+        margin=dict(l=30, r=30, t=50, b=30)
     )
 
     st.plotly_chart(fig, use_container_width=True)
 
+    # ---------------------------------------------
+    # 📉 Forecast Components (Interactive)
+    # ---------------------------------------------
     with st.expander("📉 Show Forecast Components (Trend, Yearly, etc.)"):
-        fig, axs = plt.subplots(2, 1, figsize=(12, 10), sharex=True)
+        st.subheader("📊 Forecast Components (Interactive)")
 
-        sns.lineplot(data=forecast, x='ds', y='trend', ax=axs[0], color='blue')
-        axs[0].set_title('Trend')
-        axs[0].set_ylabel('Value')
+        fig_components = make_subplots(
+            rows=2, cols=1,
+            shared_xaxes=True,
+            vertical_spacing=0.1,
+            subplot_titles=("Trend", "Yearly Seasonality")
+        )
+
+        fig_components.add_trace(
+            go.Scatter(x=forecast['ds'], y=forecast['trend'], mode='lines', name='Trend', line=dict(color='blue')),
+            row=1, col=1
+        )
 
         if 'yearly' in forecast.columns:
-            sns.lineplot(data=forecast, x='ds', y='yearly', ax=axs[1], color='orange')
-            axs[1].set_title('Yearly Seasonality')
-            axs[1].set_ylabel('Value')
+            fig_components.add_trace(
+                go.Scatter(x=forecast['ds'], y=forecast['yearly'], mode='lines', name='Yearly Seasonality', line=dict(color='orange')),
+                row=2, col=1
+            )
         else:
-            axs[1].text(0.5, 0.5, "Yearly seasonality not available", ha='center', va='center')
-            axs[1].set_title('Yearly Seasonality')
-            axs[1].set_ylabel('Value')
+            fig_components.add_annotation(
+                text="Yearly seasonality not available",
+                xref="paper", yref="paper",
+                x=0.5, y=0.25, showarrow=False, font=dict(size=14)
+            )
 
-        plt.xlabel('Date')
-        plt.tight_layout()
-        st.pyplot(fig)
+        fig_components.update_layout(
+            height=600,
+            showlegend=False,
+            template="plotly_white",
+            xaxis=dict(title="Date"),
+            yaxis=dict(title="Trend"),
+            xaxis2=dict(title="Date"),
+            yaxis2=dict(title="Yearly Seasonality"),
+            margin=dict(t=40, b=40, l=30, r=30)
+        )
+
+        st.plotly_chart(fig_components, use_container_width=True)
