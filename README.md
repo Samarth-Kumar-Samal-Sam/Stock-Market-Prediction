@@ -1,144 +1,165 @@
-# Stock Prediction using Time Series, Prophet, Streamlit, and Yfinance
+---
 
-## Overview
+# 📈 Stock Market Prediction Web Application
 
-Empower your investment decisions with **Stock Prediction**, a cutting-edge web application that leverages historical stock data and advanced time series forecasting. Using **Facebook Prophet** for robust trend and seasonality analysis, combined with **Streamlit** for an intuitive user interface and **Yfinance** to fetch live financial data, this project delivers reliable stock price forecasts with rich, interactive visualizations.
+### 🚀 **Live Demo**
 
-## Live Application
-
-Try the app now: [Stock Prediction App](https://sam-stock-market-prediction.streamlit.app/)
+🔗 [Try the Application Here](https://sam-stock-market-prediction.streamlit.app/) — **Harness the power of predictive analytics for smarter investing!**
 
 ---
 
-## Features
+## 📌 Project Overview
 
-- Fetches and visualizes historical stock prices from Yahoo Finance using `yfinance`.
-- Uses Facebook Prophet to model and forecast stock prices, capturing trends and seasonality.
-- Interactive, user-friendly interface built with Streamlit to select stocks, date ranges, and forecast horizons.
-- Dynamic, interactive charts using Plotly for intuitive exploration of historical and forecasted stock prices.
-- Detailed forecast components visualization including trends and yearly seasonality.
-- Option to download raw and forecast data as CSV for further analysis.
+Make informed investment decisions with this powerful **Stock Market Prediction** app! Utilizing historical stock data and **Facebook Prophet**'s advanced time series forecasting, this application offers accurate, data-driven stock price predictions.
+
+Built with **Streamlit** for a smooth and interactive user experience, it features dynamic visualizations and customizable forecasting horizons—perfect for traders, analysts, and enthusiasts.
 
 ---
 
-## Technologies and Tools Used
+## 🛠️ Tech Stack & Tools
 
-- **Python 3.7+**  
-- **Streamlit** – for rapid development of the web app interface  
-- **Facebook Prophet** – for advanced time series forecasting  
-- **Yfinance** – for downloading stock market data directly from Yahoo Finance  
-- **Pandas & Numpy** – for data manipulation and processing  
-- **Plotly** – for interactive plotting  
-- **Matplotlib & Seaborn** – for detailed forecast components visualization  
+| Technology              | Purpose                               |
+| ----------------------- | ------------------------------------- |
+| 🐍 Python 3.7+          | Core programming language             |
+| 🚀 Streamlit            | Fast, interactive web UI              |
+| 📈 Facebook Prophet     | Robust time-series forecasting        |
+| 💹 Yfinance             | Fetches historical stock data         |
+| 📊 Plotly               | Interactive charts and visualization  |
+| 🎨 Seaborn & Matplotlib | Statistical and static plotting       |
+| 🐼 Pandas & NumPy       | Data processing & numerical computing |
 
 ---
 
-## Installation and Setup Instructions
+## ✨ Key Features
 
-### Prerequisites
+* 📥 **Live Stock Data**: Fetches historical data directly from Yahoo Finance via `yfinance`
+* 📊 **Interactive Visualizations**: Explore detailed, interactive time-series charts
+* 🔮 **Accurate Forecasting**: Predict stock prices with Facebook Prophet, capturing trends and seasonality
+* 🎯 **Customizable Inputs**: Choose any stock ticker, date range, and forecast horizon
+* 📉 **Component Analysis**: Visualize trend, weekly, and yearly seasonal components of the forecast
+* 💾 **Data Export**: Download raw historical and forecasted data as CSV files
+* 📱 **Responsive Design**: User-friendly interface accessible on all devices
 
-Make sure you have Python 3.7 or higher installed.
+---
 
-### Step-by-Step Guide
+## ⚙️ Setup Instructions (Local Development)
 
-1. **Clone the repository**
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Samarth-Kumar-Samal/Covid-19-Prediction-Streamlit.git
+
+cd Covid-19-Prediction-Streamlit
+```
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### 3. Activate the Environment
+
+* **Windows:**
+
+```bash
+venv\Scripts\activate
+```
+
+* **Linux/macOS:**
+
+```bash
+source venv/bin/activate
+```
+
+### 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run the Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📁 Repository Structure
+
+```plaintext
+.
+├── Assets/
+│   └── stock.jpg              # Image used in the web app
+├── Notebooks/
+│   ├── Analysis.ipynb         # Exploratory data analysis
+│   └── Prediction.ipynb       # Prediction model development
+├── .gitignore                 # Git ignore file
+├── LICENSE                    # License file
+├── README.md                  # Project documentation
+├── app.py                     # Streamlit application
+└── requirements.txt           # Python dependencies
+```
+
+---
+
+## 🚀 Usage Instructions
+
+1. Select a stock ticker symbol from the dropdown menu.
+2. Define the date range for historical data analysis.
+3. Set the forecast horizon in years (customizable).
+4. Click **Predict** to generate forecasts and visualizations.
+5. Analyze interactive charts showing actual vs. predicted prices.
+6. Dive into detailed forecast components — trend, weekly and yearly seasonality.
+7. Download raw and forecasted data for offline use.
+
+---
+
+## 👨‍💻 Contributing
+
+Contributions are warmly welcome! Follow these steps:
+
+1. Fork the repository
+
+2. Create a feature branch:
 
    ```bash
-   git clone https://github.com/Samarth-Kumar-Samal/Stock-Prediction-using-Prophet.git
-   cd Stock-Prediction-using-Prophet
+   git checkout -b feature-name
    ```
 
-2. **Create a virtual environment**
-
-   * On Windows:
-
-     ```bash
-     python -m venv venv
-     venv\Scripts\activate
-     ```
-
-   * On Linux/macOS:
-
-     ```bash
-     python3 -m venv venv
-     source venv/bin/activate
-     ```
-
-3. **Install dependencies**
+3. Commit your improvements:
 
    ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run the application**
-
-   ```bash
-   streamlit run app.py
-   ```
-
-5. **Open the app**
-
-   Open your browser and go to the URL displayed in the terminal (default: [http://localhost:8501](http://localhost:8501)).
-
----
-
-## Usage Instructions
-
-* Select your preferred stock company from a comprehensive dropdown list.
-* Choose the date range for historical data to analyze.
-* Specify the forecast period in years.
-* Click **Predict** to load the data, generate forecasts, and visualize results.
-* Explore interactive charts comparing actual vs forecasted stock prices.
-* View detailed forecast components such as trend and seasonality.
-* Download the raw and forecasted datasets as CSV files for offline use.
-
----
-
-## Contribution Guidelines
-
-Contributions to improve this project are welcome!
-Please follow these steps:
-
-1. Fork the repository.
-
-2. Create a new branch for your feature:
-
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-3. Commit your changes with a meaningful message:
-
-   ```bash
-   git commit -m "Add description of feature"
+   git commit -m "Add feature description"
    ```
 
 4. Push to your branch:
 
    ```bash
-   git push origin feature/your-feature-name
+   git push origin feature-name
    ```
 
-5. Submit a pull request for review.
+5. Submit a Pull Request 🚀
 
 ---
 
-## License
+## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the **[MIT License](LICENSE)**.
 
 ---
 
-## Author
+## 👤 Author
 
 **Samarth Kumar Samal**
-GitHub: [https://github.com/Samarth-Kumar-Samal](https://github.com/Samarth-Kumar-Samal)
+🔗 [GitHub Profile](https://github.com/Samarth-Kumar-Samal-Sam)
 
 ---
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
-Special thanks to the following libraries and resources that made this project possible:
+Special thanks to these fantastic tools and libraries:
 
 * [Facebook Prophet](https://facebook.github.io/prophet/docs/quick_start.html)
 * [Streamlit](https://docs.streamlit.io/)
@@ -150,5 +171,3 @@ Special thanks to the following libraries and resources that made this project p
 * [Seaborn](https://seaborn.pydata.org/)
 
 ---
-
-Thank you for exploring this project! Your feedback and contributions are greatly appreciated.
