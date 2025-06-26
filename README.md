@@ -92,6 +92,7 @@ streamlit run app.py
 .
 ├── Assets/
 │   └── stock.jpg              # Image used in the web app
+|   └── companies.xml          # List of companies 
 ├── Notebooks/
 │   ├── Analysis.ipynb         # Exploratory data analysis
 │   └── Prediction.ipynb       # Prediction model development
