@@ -1,5 +1,3 @@
----
-
 # 📈 Stock Market Prediction Web Application
 
 ### 🚀 **Live Demo**
@@ -47,9 +45,9 @@ Built with **Streamlit** for a smooth and interactive user experience, it featur
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Samarth-Kumar-Samal/Covid-19-Prediction-Streamlit.git
+git clone https://github.com/Samarth-Kumar-Samal-Sam/Stock-Market-Prediction.git
 
-cd Covid-19-Prediction-Streamlit
+cd Stock-Market-Prediction
 ```
 
 ### 2. Create a Virtual Environment
