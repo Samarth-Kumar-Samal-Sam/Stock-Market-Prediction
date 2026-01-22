@@ -1,42 +1,65 @@
 # 📈 Stock Market Prediction Web Application
 
-### 🚀 **Live Demo**
+## 🚀 **Live Demo**
 
-🔗 [Try the Application Here](https://sam-stock-market-prediction.streamlit.app/) — **Harness the power of predictive analytics for smarter investing!**
+🔗 **Try the Application Here:**  
+https://stock-market-prediction-sam.streamlit.app/
+
+Make data-driven investment insights using time-series forecasting powered by **YFinance, Prophet, and NeuralProphet**.
 
 ---
 
 ## 📌 Project Overview
 
-Make informed investment decisions with this powerful **Stock Market Prediction** app! Utilizing historical stock data and **Facebook Prophet**'s advanced time series forecasting, this application offers accurate, data-driven stock price predictions.
+The **Stock Market Prediction Web Application** is an interactive forecasting platform that enables users to analyze historical stock prices and generate future price predictions using advanced time-series models.
 
-Built with **Streamlit** for a smooth and interactive user experience, it features dynamic visualizations and customizable forecasting horizons—perfect for traders, analysts, and enthusiasts.
+The application fetches real-time historical data from **Yahoo Finance (YFinance)** and applies both **Facebook Prophet** and **NeuralProphet** models to capture trends, seasonality, and complex temporal dependencies. Built with **Streamlit**, the app delivers a clean, responsive, and user-friendly interface with interactive visualizations and customizable forecasting horizons.
+
+This project is ideal for investors, analysts, data science students, and financial enthusiasts.
 
 ---
 
 ## 🛠️ Tech Stack & Tools
 
-| Technology              | Purpose                               |
-| ----------------------- | ------------------------------------- |
-| 🐍 Python 3.7+          | Core programming language             |
-| 🚀 Streamlit            | Fast, interactive web UI              |
-| 📈 Facebook Prophet     | Robust time-series forecasting        |
-| 💹 Yfinance             | Fetches historical stock data         |
-| 📊 Plotly               | Interactive charts and visualization  |
-| 🎨 Seaborn & Matplotlib | Statistical and static plotting       |
-| 🐼 Pandas & NumPy       | Data processing & numerical computing |
+| Technology              | Purpose                                             |
+|------------------------|-----------------------------------------------------|
+| 🐍 Python 3.7+          | Core programming language                           |
+| 🚀 Streamlit            | Interactive web application framework               |
+| 📈 Prophet              | Time-series forecasting (trend & seasonality)       |
+| 🧠 NeuralProphet        | Neural network-based time-series forecasting        |
+| 💹 YFinance             | Fetches historical stock market data                |
+| 📊 Plotly               | Interactive data visualization                      |
+| 🎨 Seaborn & Matplotlib | Statistical and static visualizations               |
+| 🐼 Pandas & NumPy       | Data manipulation and numerical computing           |
 
 ---
 
 ## ✨ Key Features
 
-* 📥 **Live Stock Data**: Fetches historical data directly from Yahoo Finance via `yfinance`
-* 📊 **Interactive Visualizations**: Explore detailed, interactive time-series charts
-* 🔮 **Accurate Forecasting**: Predict stock prices with Facebook Prophet, capturing trends and seasonality
-* 🎯 **Customizable Inputs**: Choose any stock ticker, date range, and forecast horizon
-* 📉 **Component Analysis**: Visualize trend, weekly, and yearly seasonal components of the forecast
-* 💾 **Data Export**: Download raw historical and forecasted data as CSV files
-* 📱 **Responsive Design**: User-friendly interface accessible on all devices
+- 📥 **Live Market Data**  
+  Fetches historical stock price data directly from Yahoo Finance using `yfinance`.
+
+- 📊 **Interactive Visualizations**  
+  Dynamic charts for historical prices, forecasts, and predictions.
+
+- 🔮 **Dual Forecasting Models**  
+  - **Prophet** for interpretable trend and seasonality modeling  
+  - **NeuralProphet** for advanced pattern learning using neural networks  
+
+- 🎯 **Customizable Inputs**  
+  Select stock ticker symbols, historical date range, and forecast horizon.
+
+- 📉 **Component Analysis**  
+  Visualize forecast components including:
+  - Trend  
+  - Weekly seasonality  
+  - Yearly seasonality  
+
+- 💾 **Data Export**  
+  Download historical data and forecasted results as CSV files.
+
+- 📱 **Responsive Design**  
+  Optimized for desktop, tablet, and mobile devices.
 
 ---
 
@@ -46,7 +69,6 @@ Built with **Streamlit** for a smooth and interactive user experience, it featur
 
 ```bash
 git clone https://github.com/Samarth-Kumar-Samal-Sam/Stock-Market-Prediction.git
-
 cd Stock-Market-Prediction
 ```
 
@@ -106,12 +128,13 @@ streamlit run app.py
 ## 🚀 Usage Instructions
 
 1. Select a stock ticker symbol from the dropdown menu.
-2. Define the date range for historical data analysis.
-3. Set the forecast horizon in years (customizable).
-4. Click **Predict** to generate forecasts and visualizations.
-5. Analyze interactive charts showing actual vs. predicted prices.
-6. Dive into detailed forecast components — trend, weekly and yearly seasonality.
-7. Download raw and forecasted data for offline use.
+2. Choose the historical date range for analysis.
+3. Set the forecast horizon (in years).
+4. Select the forecasting model (Prophet or NeuralProphet).
+5. Click Predict to generate forecasts.
+6. Analyze interactive charts comparing actual vs predicted prices.
+7. Explore forecast components such as trend and seasonality.
+8. Download historical and forecasted data for offline analysis.
 
 ---
 
@@ -160,13 +183,14 @@ This project is licensed under the **[MIT License](LICENSE)**.
 
 Special thanks to these fantastic tools and libraries:
 
-* [Facebook Prophet](https://facebook.github.io/prophet/docs/quick_start.html)
+* [Prophet (Facebook Prophet)](https://facebook.github.io/prophet/docs/quick_start.html)
+* [NeuralProphet](https://neuralprophet.com/)
 * [Streamlit](https://docs.streamlit.io/)
-* [Yfinance](https://pypi.org/project/yfinance/)
+* [yfinance](https://pypi.org/project/yfinance/)
 * [Pandas](https://pandas.pydata.org/docs/)
-* [Numpy](https://numpy.org/doc/stable/)
+* [NumPy](https://numpy.org/doc/stable/)
 * [Plotly](https://plotly.com/python/)
 * [Matplotlib](https://matplotlib.org/)
 * [Seaborn](https://seaborn.pydata.org/)
-
 ---
+
