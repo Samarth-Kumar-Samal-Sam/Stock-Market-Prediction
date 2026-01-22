@@ -8,4 +8,5 @@ streamlit
 plotly
 jupyter
 neuralprophet
-altair
+altair<5.0.0
+
