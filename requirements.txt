@@ -9,4 +9,4 @@ plotly
 jupyter
 neuralprophet
 altair<5.0.0
-
+holidays>=0.21,<0.25
