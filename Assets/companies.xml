@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<companies>
+  <company>
+    <name>Apple</name>
+    <ticker>AAPL</ticker>
+  </company>
+  <company>
+    <name>Microsoft</name>
+    <ticker>MSFT</ticker>
+  </company>
+  <company>
+    <name>Alphabet Class A</name>
+    <ticker>GOOGL</ticker>
+  </company>
+  <company>
+    <name>Alphabet Class C</name>
+    <ticker>GOOG</ticker>
+  </company>
+  <company>
+    <name>Amazon</name>
+    <ticker>AMZN</ticker>
+  </company>
+  <company>
+    <name>Tesla</name>
+    <ticker>TSLA</ticker>
+  </company>
+  <company>
+    <name>Meta Platforms</name>
+    <ticker>META</ticker>
+  </company>
+  <company>
+    <name>NVIDIA</name>
+    <ticker>NVDA</ticker>
+  </company>
+  <company>
+    <name>Berkshire Hathaway Class B</name>
+    <ticker>BRK-B</ticker>
+  </company>
+  <company>
+    <name>JPMorgan Chase</name>
+    <ticker>JPM</ticker>
+  </company>
+  <company>
+    <name>Johnson &amp; Johnson</name>
+    <ticker>JNJ</ticker>
+  </company>
+  <company>
+    <name>Visa</name>
+    <ticker>V</ticker>
+  </company>
+  <company>
+    <name>Walmart</name>
+    <ticker>WMT</ticker>
+  </company>
+  <company>
+    <name>UnitedHealth Group</name>
+    <ticker>UNH</ticker>
+  </company>
+  <company>
+    <name>Procter &amp; Gamble</name>
+    <ticker>PG</ticker>
+  </company>
+  <company>
+    <name>Mastercard</name>
+    <ticker>MA</ticker>
+  </company>
+  <company>
+    <name>Home Depot</name>
+    <ticker>HD</ticker>
+  </company>
+  <company>
+    <name>Disney</name>
+    <ticker>DIS</ticker>
+  </company>
+  <company>
+    <name>Bank of America</name>
+    <ticker>BAC</ticker>
+  </company>
+  <company>
+    <name>PayPal</name>
+    <ticker>PYPL</ticker>
+  </company>
+  <company>
+    <name>ExxonMobil</name>
+    <ticker>XOM</ticker>
+  </company>
+  <company>
+    <name>Netflix</name>
+    <ticker>NFLX</ticker>
+  </company>
+  <company>
+    <name>Adobe</name>
+    <ticker>ADBE</ticker>
+  </company>
+  <company>
+    <name>Salesforce</name>
+    <ticker>CRM</ticker>
+  </company>
+  <company>
+    <name>Intel</name>
+    <ticker>INTC</ticker>
+  </company>
+  <company>
+    <name>AbbVie</name>
+    <ticker>ABBV</ticker>
+  </company>
+  <company>
+    <name>Pfizer</name>
+    <ticker>PFE</ticker>
+  </company>
+  <company>
+    <name>Coca-Cola</name>
+    <ticker>KO</ticker>
+  </company>
+  <company>
+    <name>PepsiCo</name>
+    <ticker>PEP</ticker>
+  </company>
+  <company>
+    <name>Chevron</name>
+    <ticker>CVX</ticker>
+  </company>
+  <company>
+    <name>Cisco Systems</name>
+    <ticker>CSCO</ticker>
+  </company>
+  <company>
+    <name>Oracle</name>
+    <ticker>ORCL</ticker>
+  </company>
+  <company>
+    <name>IBM</name>
+    <ticker>IBM</ticker>
+  </company>
+  <company>
+    <name>Costco</name>
+    <ticker>COST</ticker>
+  </company>
+  <company>
+    <name>Accenture</name>
+    <ticker>ACN</ticker>
+  </company>
+  <company>
+    <name>Qualcomm</name>
+    <ticker>QCOM</ticker>
+  </company>
+  <company>
+    <name>AT&amp;T</name>
+    <ticker>T</ticker>
+  </company>
+  <company>
+    <name>Verizon</name>
+    <ticker>VZ</ticker>
+  </company>
+  <company>
+    <name>3M</name>
+    <ticker>MMM</ticker>
+  </company>
+  <company>
+    <name>Amgen</name>
+    <ticker>AMGN</ticker>
+  </company>
+  <company>
+    <name>Broadcom</name>
+    <ticker>AVGO</ticker>
+  </company>
+  <company>
+    <name>Texas Instruments</name>
+    <ticker>TXN</ticker>
+  </company>
+  <company>
+    <name>General Electric</name>
+    <ticker>GE</ticker>
+  </company>
+  <company>
+    <name>Boeing</name>
+    <ticker>BA</ticker>
+  </company>
+  <company>
+    <name>Lockheed Martin</name>
+    <ticker>LMT</ticker>
+  </company>
+  <company>
+    <name>Raytheon Technologies</name>
+    <ticker>RTX</ticker>
+  </company>
+  <company>
+    <name>Honeywell</name>
+    <ticker>HON</ticker>
+  </company>
+  <company>
+    <name>Medtronic</name>
+    <ticker>MDT</ticker>
+  </company>
+  <company>
+    <name>Caterpillar</name>
+    <ticker>CAT</ticker>
+  </company>
+  <company>
+    <name>American Express</name>
+    <ticker>AXP</ticker>
+  </company>
+  <company>
+    <name>Morgan Stanley</name>
+    <ticker>MS</ticker>
+  </company>
+  <company>
+    <name>Goldman Sachs</name>
+    <ticker>GS</ticker>
+  </company>
+  <company>
+    <name>Citigroup</name>
+    <ticker>C</ticker>
+  </company>
+  <company>
+    <name>Charles Schwab</name>
+    <ticker>SCHW</ticker>
+  </company>
+  <company>
+    <name>BlackRock</name>
+    <ticker>BLK</ticker>
+  </company>
+  <company>
+    <name>S&amp;P Global</name>
+    <ticker>SPGI</ticker>
+  </company>
+  <company>
+    <name>Moody's</name>
+    <ticker>MCO</ticker>
+  </company>
+  <company>
+    <name>Intuit</name>
+    <ticker>INTU</ticker>
+  </company>
+  <company>
+    <name>ServiceNow</name>
+    <ticker>NOW</ticker>
+  </company>
+  <company>
+    <name>Workday</name>
+    <ticker>WDAY</ticker>
+  </company>
+  <company>
+    <name>Snowflake</name>
+    <ticker>SNOW</ticker>
+  </company>
+  <company>
+    <name>Palantir</name>
+    <ticker>PLTR</ticker>
+  </company>
+  <company>
+    <name>Datadog</name>
+    <ticker>DDOG</ticker>
+  </company>
+  <company>
+    <name>CrowdStrike</name>
+    <ticker>CRWD</ticker>
+  </company>
+  <company>
+    <name>Zoom Video</name>
+    <ticker>ZM</ticker>
+  </company>
+  <company>
+    <name>Shopify</name>
+    <ticker>SHOP</ticker>
+  </company>
+  <company>
+    <name>Block (Square)</name>
+    <ticker>SQ</ticker>
+  </company>
+  <company>
+    <name>Twilio</name>
+    <ticker>TWLO</ticker>
+  </company>
+  <company>
+    <name>Uber</name>
+    <ticker>UBER</ticker>
+  </company>
+  <company>
+    <name>Lyft</name>
+    <ticker>LYFT</ticker>
+  </company>
+  <company>
+    <name>Roku</name>
+    <ticker>ROKU</ticker>
+  </company>
+  <company>
+    <name>Pinterest</name>
+    <ticker>PINS</ticker>
+  </company>
+  <company>
+    <name>Snap</name>
+    <ticker>SNAP</ticker>
+  </company>
+  <company>
+    <name>Spotify</name>
+    <ticker>SPOT</ticker>
+  </company>
+  <company>
+    <name>DoorDash</name>
+    <ticker>DASH</ticker>
+  </company>
+  <company>
+    <name>Robinhood</name>
+    <ticker>HOOD</ticker>
+  </company>
+  <company>
+    <name>Coinbase</name>
+    <ticker>COIN</ticker>
+  </company>
+  <company>
+    <name>Unity Software</name>
+    <ticker>U</ticker>
+  </company>
+  <company>
+    <name>Sea Limited</name>
+    <ticker>SE</ticker>
+  </company>
+  <company>
+    <name>Cloudflare</name>
+    <ticker>NET</ticker>
+  </company>
+  <company>
+    <name>Zscaler</name>
+    <ticker>ZS</ticker>
+  </company>
+  <company>
+    <name>Okta</name>
+    <ticker>OKTA</ticker>
+  </company>
+  <company>
+    <name>MongoDB</name>
+    <ticker>MDB</ticker>
+  </company>
+  <company>
+    <name>Elastic</name>
+    <ticker>ESTC</ticker>
+  </company>
+  <company>
+    <name>Altria Group</name>
+    <ticker>MO</ticker>
+  </company>
+  <company>
+    <name>Philip Morris</name>
+    <ticker>PM</ticker>
+  </company>
+  <company>
+    <name>Ford Motor</name>
+    <ticker>F</ticker>
+  </company>
+  <company>
+    <name>General Motors</name>
+    <ticker>GM</ticker>
+  </company>
+  <company>
+    <name>Toyota Motor</name>
+    <ticker>TM</ticker>
+  </company>
+  <company>
+    <name>Booking Holdings</name>
+    <ticker>BKNG</ticker>
+  </company>
+  <company>
+    <name>Marriott International</name>
+    <ticker>MAR</ticker>
+  </company>
+  <company>
+    <name>Delta Air Lines</name>
+    <ticker>DAL</ticker>
+  </company>
+  <company>
+    <name>American Airlines</name>
+    <ticker>AAL</ticker>
+  </company>
+  <company>
+    <name>Southwest Airlines</name>
+    <ticker>LUV</ticker>
+  </company>
+  <company>
+    <name>Hilton Worldwide</name>
+    <ticker>HLT</ticker>
+  </company>
+  <company>
+    <name>Target</name>
+    <ticker>TGT</ticker>
+  </company>
+  <company>
+    <name>Lowe's</name>
+    <ticker>LOW</ticker>
+  </company>
+  <company>
+    <name>Dollar General</name>
+    <ticker>DG</ticker>
+  </company>
+  <company>
+    <name>Best Buy</name>
+    <ticker>BBY</ticker>
+  </company>
+  <company>
+    <name>T-Mobile</name>
+    <ticker>TMUS</ticker>
+  </company>
+  <company>
+    <name>Monster Beverage</name>
+    <ticker>MNST</ticker>
+  </company>
+  <company>
+    <name>Colgate-Palmolive</name>
+    <ticker>CL</ticker>
+  </company>
+  <company>
+    <name>Estee Lauder</name>
+    <ticker>EL</ticker>
+  </company>
+  <company>
+    <name>Lululemon</name>
+    <ticker>LULU</ticker>
+  </company>
+  <company>
+    <name>Nike</name>
+    <ticker>NKE</ticker>
+  </company>
+  <company>
+    <name>Under Armour</name>
+    <ticker>UAA</ticker>
+  </company>
+  <company>
+    <name>Domino's Pizza</name>
+    <ticker>DPZ</ticker>
+  </company>
+  <company>
+    <name>McDonald's</name>
+    <ticker>MCD</ticker>
+  </company>
+  <company>
+    <name>Starbucks</name>
+    <ticker>SBUX</ticker>
+  </company>
+  <company>
+    <name>Kraft Heinz</name>
+    <ticker>KHC</ticker>
+  </company>
+  <company>
+    <name>FedEx</name>
+    <ticker>FDX</ticker>
+  </company>
+  <company>
+    <name>UPS</name>
+    <ticker>UPS</ticker>
+  </company>
+  <company>
+    <name>Advanced Micro Devices</name>
+    <ticker>AMD</ticker>
+  </company>
+  <company>
+    <name>ARM Holdings</name>
+    <ticker>ARM</ticker>
+  </company>
+  <company>
+    <name>Micron Technology</name>
+    <ticker>MU</ticker>
+  </company>
+  <company>
+    <name>ASML Holding</name>
+    <ticker>ASML</ticker>
+  </company>
+  <company>
+    <name>Taiwan Semiconductor ADR</name>
+    <ticker>TSM</ticker>
+  </company>
+  <company>
+    <name>Applied Materials</name>
+    <ticker>AMAT</ticker>
+  </company>
+  <company>
+    <name>Lam Research</name>
+    <ticker>LRCX</ticker>
+  </company>
+  <company>
+    <name>Analog Devices</name>
+    <ticker>ADI</ticker>
+  </company>
+  <company>
+    <name>ON Semiconductor</name>
+    <ticker>ON</ticker>
+  </company>
+  <company>
+    <name>Marvell Technology</name>
+    <ticker>MRVL</ticker>
+  </company>
+  <company>
+    <name>GlobalFoundries</name>
+    <ticker>GFS</ticker>
+  </company>
+  <company>
+    <name>Skyworks Solutions</name>
+    <ticker>SWKS</ticker>
+  </company>
+  <company>
+    <name>Regeneron Pharmaceuticals</name>
+    <ticker>REGN</ticker>
+  </company>
+  <company>
+    <name>Gilead Sciences</name>
+    <ticker>GILD</ticker>
+  </company>
+  <company>
+    <name>Moderna</name>
+    <ticker>MRNA</ticker>
+  </company>
+  <company>
+    <name>Biogen</name>
+    <ticker>BIIB</ticker>
+  </company>
+  <company>
+    <name>Vertex Pharmaceuticals</name>
+    <ticker>VRTX</ticker>
+  </company>
+  <company>
+    <name>Eli Lilly</name>
+    <ticker>LLY</ticker>
+  </company>
+  <company>
+    <name>Bristol-Myers Squibb</name>
+    <ticker>BMY</ticker>
+  </company>
+  <company>
+    <name>Merck &amp; Co.</name>
+    <ticker>MRK</ticker>
+  </company>
+  <company>
+    <name>CVS Health</name>
+    <ticker>CVS</ticker>
+  </company>
+  <company>
+    <name>Walgreens Boots Alliance</name>
+    <ticker>WBA</ticker>
+  </company>
+  <company>
+    <name>Humana</name>
+    <ticker>HUM</ticker>
+  </company>
+  <company>
+    <name>Cigna</name>
+    <ticker>CI</ticker>
+  </company>
+  <company>
+    <name>Elevance Health</name>
+    <ticker>ELV</ticker>
+  </company>
+  <company>
+    <name>ConocoPhillips</name>
+    <ticker>COP</ticker>
+  </company>
+  <company>
+    <name>Occidental Petroleum</name>
+    <ticker>OXY</ticker>
+  </company>
+  <company>
+    <name>Schlumberger</name>
+    <ticker>SLB</ticker>
+  </company>
+  <company>
+    <name>Halliburton</name>
+    <ticker>HAL</ticker>
+  </company>
+  <company>
+    <name>Marathon Petroleum</name>
+    <ticker>MPC</ticker>
+  </company>
+  <company>
+    <name>Valero Energy</name>
+    <ticker>VLO</ticker>
+  </company>
+  <company>
+    <name>Phillips 66</name>
+    <ticker>PSX</ticker>
+  </company>
+  <company>
+    <name>Devon Energy</name>
+    <ticker>DVN</ticker>
+  </company>
+  <company>
+    <name>EOG Resources</name>
+    <ticker>EOG</ticker>
+  </company>
+  <company>
+    <name>Pioneer Natural Resources</name>
+    <ticker>PXD</ticker>
+  </company>
+  <company>
+    <name>Wells Fargo</name>
+    <ticker>WFC</ticker>
+  </company>
+  <company>
+    <name>Truist Financial</name>
+    <ticker>TFC</ticker>
+  </company>
+  <company>
+    <name>U.S. Bancorp</name>
+    <ticker>USB</ticker>
+  </company>
+  <company>
+    <name>PNC Financial Services</name>
+    <ticker>PNC</ticker>
+  </company>
+  <company>
+    <name>Chubb</name>
+    <ticker>CB</ticker>
+  </company>
+  <company>
+    <name>American International Group</name>
+    <ticker>AIG</ticker>
+  </company>
+  <company>
+    <name>Berkshire Hathaway Class A</name>
+    <ticker>BRK.A</ticker>
+  </company>
+  <company>
+    <name>Blackstone</name>
+    <ticker>BX</ticker>
+  </company>
+  <company>
+    <name>KKR</name>
+    <ticker>KKR</ticker>
+  </company>
+  <company>
+    <name>Carlyle Group</name>
+    <ticker>CG</ticker>
+  </company>
+  <company>
+    <name>Apollo Global Management</name>
+    <ticker>APO</ticker>
+  </company>
+  <company>
+    <name>Brown-Forman</name>
+    <ticker>BF.B</ticker>
+  </company>
+  <company>
+    <name>Estee Lauder Companies</name>
+    <ticker>EL</ticker>
+  </company>
+  <company>
+    <name>Clorox</name>
+    <ticker>CLX</ticker>
+  </company>
+  <company>
+    <name>Prologis</name>
+    <ticker>PLD</ticker>
+  </company>
+  <company>
+    <name>Equinix</name>
+    <ticker>EQIX</ticker>
+  </company>
+  <company>
+    <name>Digital Realty Trust</name>
+    <ticker>DLR</ticker>
+  </company>
+  <company>
+    <name>American Tower</name>
+    <ticker>AMT</ticker>
+  </company>
+  <company>
+    <name>Crown Castle</name>
+    <ticker>CCI</ticker>
+  </company>
+  <company>
+    <name>Public Storage</name>
+    <ticker>PSA</ticker>
+  </company>
+  <company>
+    <name>Simon Property Group</name>
+    <ticker>SPG</ticker>
+  </company>
+  <company>
+    <name>Ventas</name>
+    <ticker>VTR</ticker>
+  </company>
+  <company>
+    <name>Healthpeak Properties</name>
+    <ticker>PEAK</ticker>
+  </company>
+  <company>
+    <name>Welltower</name>
+    <ticker>WELL</ticker>
+  </company>
+  <company>
+    <name>Ventas</name>
+    <ticker>VTR</ticker>
+  </company>
+</companies>
