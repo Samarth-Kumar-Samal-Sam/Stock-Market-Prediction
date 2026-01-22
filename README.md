@@ -106,21 +106,29 @@ streamlit run app.py
 
 ---
 
-## 📁 Repository Structure
+## 📁 Project Folder Structure
 
 ```plaintext
-.
+Stock-Market-Prediction/
+│
 ├── Assets/
-│   └── stock.jpg              # Image used in the web app
-|   └── companies.xml          # List of companies 
+│   ├── companies.xml                  # List of supported companies
+│   └── stock.jpg                      # Image used in the Streamlit app
+│
 ├── Notebooks/
-│   ├── Analysis.ipynb         # Exploratory data analysis
-│   └── Prediction.ipynb       # Prediction model development
-├── .gitignore                 # Git ignore file
-├── LICENSE                    # License file
-├── README.md                  # Project documentation
-├── app.py                     # Streamlit application
-└── requirements.txt           # Python dependencies
+│   ├── Neural Prophet/
+│   │   ├── Analysis.ipynb             # Exploratory data analysis
+│   │   ├── Prediction Functions.ipynb # Helper forecasting functions
+│   │   └── Prediction.ipynb           # NeuralProphet model development
+│   │
+│   ├── Prophet/
+│   │   ├── Analysis.ipynb             # Exploratory data analysis
+│   │   ├── Prediction Functions.ipynb # Helper forecasting functions
+│   │   └── Prediction.ipynb           # Prophet model development
+│
+├── app.py                             # Streamlit web application
+├── requirements.txt                   # Python dependencies
+└── README.md                          # Project documentation
 ```
 
 ---
@@ -193,4 +201,5 @@ Special thanks to these fantastic tools and libraries:
 * [Matplotlib](https://matplotlib.org/)
 * [Seaborn](https://seaborn.pydata.org/)
 ---
+
 
